@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/logo.png"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo" title="University Management System">        
+        </div>
+        <div class="navbar">
+            <a href="index.html" class="active">
+                <span class="material-icons-sharp">dashboard</span>
+                <h3>Dashboard</h3>
+            </a>
+            <a href="home.html">
+                <span class="material-icons-sharp">home</span>
+                <h3>Home</h3>
+            </a>
+            <a href="timetable.html" onclick="timeTableAll()">
+                <span class="material-icons-sharp">today</span>
+                <h3>Time Table</h3>
+            </a> 
+            <a href="exam.html">
+                <span class="material-icons-sharp">grid_view</span>
+                <h3>Examination</h3>
+            </a>
+        </div>
+       <div id="profile-btn">
+            <span class="material-icons-sharp">person</span>
+        </div>
+    </header>
+    <div class="container">
+        <aside>
+            <div class="profile">
+                <h1> Profile</h1>
+                <div class="top">
+                    <div class="profile-photo">
+                        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Ffree-vector%2Fprofile-icon&psig=AOvVaw3QQtC_7bijKs5jPZOEaBnT&ust=1678615054578000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCMi_4cHO0_0CFQAAAAAdAAAAABAE" alt="">
+                    </div>
+                    <div class="info">
+                        <p><b>Sophia</b> </p>
+                        <small class="text-muted">12115153</small>
+                    </div>
+                </div>
+                <div class="about">
+                    <h5>Course</h5>
+                    <p>BTECH "Bachelor Of Techology"</p>
+                    <h5>DOB</h5>
+                    <p>15-Sept-2000</p>
+                    <h5>Contact</h5>
+                    <p>9984675874</p>
+                    <h5>Email</h5>
+                    <p>sophia15@gmail.com</p>
+                    <h5>Address</h5>
+                    <p>623,gandhiNagar,Ap</p>
+                </div>
+            </div>
+        </aside>
+        <main>
+            <h1>Courses Enrolled</h1>
+            <div class="subjects">
+                <div class="eg">
+                    <span >Science</span>
+                    <h3>Chemistry</h3>
+                    <div class="progress">
+                        <svg><circle cx="38" cy="38" r="36"></circle></svg>
+                        <div class="number"><p>86%</p></div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <div class="mth">
+                    <span>Technology</span>
+                    <h3>Machine Learning</h3>
+                    <div class="progress">
+                        <svg><circle cx="38" cy="38" r="36"></circle></svg>
+                        <div class="number"><p>93%</p></div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <div class="cs">
+                    <span>Engineering</span>
+                    <h3>Java</h3>
+                    
+                    <div class="progress">
+                        <svg><circle cx="38" cy="38" r="36"></circle></svg>
+                        <div class="number"><p>81%</p></div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <div class="cg">
+                    <span>Mathematics</span>
+                    <h3>Probability and Statistics</h3>
+                
+                    <div class="progress">
+                        <svg><circle cx="38" cy="38" r="36"></circle></svg>
+                        <div class="number"><p>96%</p></div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+            </div>
+
+            <div class="timetable" id="timetable">
+                <div>
+                    <span id="prevDay"> &lt; </span>
+                    <h2>Time Table</h2>
+                    <span id="nextDay"> &gt; </span>
+                </div>
+                <span class="closeBtn" onclick="timeTableAll()"></span>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>app</th>
+                            <th>Subject</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </main>
+
+        <div class="right">
+            <div class="announcements">
+                <h2>Announcements</h2>
+                <div class="updates">
+                    <div class="message">
+                        <p> <b>Academic</b> Summer training internship with Live Projects.</p>
+                        <small class="text-muted">2 Minutes Ago</small>
+                    </div>
+                    <div class="message">
+                        <p> <b>Co-curricular</b> Global internship oportunity by Student organization.</p>
+                        <small class="text-muted">10 Minutes Ago</small>
+                    </div>
+                    <div class="message">
+                        <p> <b>Examination</b> Instructions for Mid Term Examination.</p>
+                        <small class="text-muted">Yesterday</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="leaves">
+                <h2>Mentors on leave</h2>
+                <div class="teacher">
+                    <div class="profile-photo"></div>
+                    <div class="info">
+                        <h3>The Professor</h3>
+                        <small class="text-muted">Day Span : Full Day</small>
+                    </div>
+                </div>
+                <div class="teacher">
+                    <div class="profile-photo"></div>
+                    <div class="info">
+                        <h3>Olivia</h3>
+                        <small class="text-muted">Day Span : Half Day</small>
+                    </div>
+                </div>
+                <div class="teacher">
+                    <div class="profile-photo"></div>
+                    <div class="info">
+                        <h3>Amelia</h3>
+                        <small class="text-muted">Day Span : Full Day</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="timeTable.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
