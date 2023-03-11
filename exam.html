@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/logo.png">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body{overflow: hidden;}
+        header{position: relative;}
+        .exam{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 80vh;
+            width: 80%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="dashboard.html">
+                <span class="material-icons-sharp">dashboard</span>
+                <h3>Dashboard</h3>
+            </a>
+            <a href="home.html">
+                <span class="material-icons-sharp">home</span>
+                <h3>Home</h3>
+            </a>
+            <a href="timetable.html" onclick="timeTableAll()">
+                <span class="material-icons-sharp">today</span>
+                <h3>Time Table</h3>
+            </a> 
+            <a href="exam.html" class="active">
+                <span class="material-icons-sharp">grid_view</span>
+                <h3>Examination</h3>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="exam timetable">
+            <h2>Exam Available</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Subject</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>26 Nov 2022</td>
+                        <td>09-12 AM</td>
+                        <td>CAP274</td>
+                    </tr>
+                    <tr>
+                        <td>28 Nov 2022</td>
+                        <td>09-12 AM</td>
+                        <td>CAP282</td>
+                    </tr>
+                    <tr>
+                        <td>02 Dec 2022</td>
+                        <td>09-12 AM</td>
+                        <td>CAP267</td>
+                     </tr>
+                    <tr>
+                        <td>06 Dec 2022</td>
+                        <td>09-12 AM</td>
+                        <td>CAP213</td>   
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    </main>
+</body>
+<script src="app.js"></script>
+</html>
