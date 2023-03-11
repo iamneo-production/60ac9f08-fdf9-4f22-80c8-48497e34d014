@@ -94,7 +94,6 @@ header .navbar a:hover {
 }
 header .navbar a.active::before{
     content: "";
-    /*background-color: rgb(95, 109, 234);*/
     position: absolute;
     height: 5px;
     width: 100%;
@@ -118,9 +117,6 @@ aside .profile .top{
     border-bottom: 1px solid var(--color-light);
     padding-bottom: 1rem;
 }
-/*aside .profile .top:hover .profile-photo{
-    scale: 1.05;
-}*/
 aside .profile .top .profile-photo{
     width: 6rem;
     height: 6rem;
