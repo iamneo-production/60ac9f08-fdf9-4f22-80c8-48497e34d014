@@ -59,15 +59,6 @@ header{
     z-index: 1000;
     background-color:rgb(247, 39, 205);
 }
-header .logo{
-    display: flex;
-    gap: .8rem;
-    margin-right: auto;
-}
-header .logo img{
-    width: 2rem;
-    height: 2rem;
-}
 header,
 header .navbar{
     display: flex;
@@ -301,7 +292,6 @@ main .timetable.active .closeBtn{
     }
     header{position: fixed;}
     .container{padding-top: 4rem;}
-    header .logo h2{display: none;}
     header .navbar h3{display: none;}
     header .navbar a{width: 4.5rem; padding: 0 1rem;}
     main .subjects{
