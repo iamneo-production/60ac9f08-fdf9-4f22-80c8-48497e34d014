@@ -123,7 +123,7 @@ main{
 }
 main .subjects{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.6rem;
 }
 main .subjects > div{
@@ -163,8 +163,6 @@ main .subjects svg circle{
     stroke-width: 8;
     stroke-linecap: round;
     transform: translate(5px, 5px);
-    stroke-dasharray: 110;
-    stroke-dashoffset: 92;
 }
 main .subjects .eg svg circle{
     stroke-dashoffset: 25;
