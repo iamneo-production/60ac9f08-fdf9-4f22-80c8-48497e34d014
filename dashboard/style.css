@@ -309,7 +309,6 @@ main .timetable.active .closeBtn{
     header #profile-btn{display: inline;}
     header .navbar{padding: 0;}
     header .navbar a{margin: 0 .5rem 0 0;}
-    header .theme-toggler{margin: 0;}
     aside{
         position: absolute;
         top: 4rem;left: 0;right: 0;
