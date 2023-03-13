@@ -1,6 +1,5 @@
 const sideMenu = document.querySelector("aside");
 const profileBtn = document.querySelector("#profile-btn");
-const themeToggler = document.querySelector(".theme-toggler");
 const nextDay = document.getElementById('nextDay');
 const prevDay = document.getElementById('prevDay');
 
